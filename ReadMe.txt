@@ -1,3 +1,0 @@
-A savoir :
- -- On vous proposera toujours de faire une offre : si cette offre existe déjà dans le mémoire partagée, elle se transforme en demande et le request s'envoie au joueur concerné, sinon l'offre est déposé. 
--- Quand vous sécurisez une offre de la mémoire partagée, vous allez voir si quelqu'un vous sollicite avant d'envoyer la request de l'offre sécurisé (évite un deadlock : 2 joueur un envoie un request de 2 cartes à l'autre et l'autre envoie un request de 1 carte à l'autre , les deux attendrons la réponse de l'autre, donc avant de faire le request on vérifie si quelqu'un nous a sollicité   ) -> si pas de sollicitations: le request de l'offre sécurisé est envoyé.
